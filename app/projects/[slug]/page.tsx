@@ -15,7 +15,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const p = getProjects().find((x) => x.slug === slug);
-  return p ? pageMeta(`/proyectos/${p.slug}/`, { title: p.name, description: p.description ?? p.summary, image: p.cover, type: 'article' }) : {};
+  return p ? pageMeta(`/projects/${p.slug}/`, { title: p.name, description: p.description ?? p.summary, image: p.cover, type: 'article' }) : {};
 }
 
 export default async function ProjectPage({ params }: Props) {
@@ -28,7 +28,7 @@ export default async function ProjectPage({ params }: Props) {
   return (
     <>
       <div className="r-hero"><div className="wrap">
-        <div className="crumbs"><Link href="/">Inicio</Link><span>/</span><Link href="/proyectos/">Proyectos</Link><span>/</span><span style={{ color: 'var(--fg)' }}>{p.name}</span></div>
+        <div className="crumbs"><Link href="/">Inicio</Link><span>/</span><Link href="/projects/">Proyectos</Link><span>/</span><span style={{ color: 'var(--fg)' }}>{p.name}</span></div>
         <span className="eyebrow">Proyecto personal</span>
         <h1 style={{ marginTop: 12 }}>{p.name}</h1>
         <p className="sub">{p.summary}</p>

@@ -9,10 +9,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const u = (p: string) => `${SITE.url}${p}`;
   return [
     { url: u('/'), priority: 1 },
-    { url: u('/proyectos/'), priority: 0.8 },
+    { url: u('/projects/'), priority: 0.8 },
     { url: u('/blog/'), priority: 0.8 },
-    { url: u('/sobre-mi/'), priority: 0.7 },
-    ...getProjects().map((p) => ({ url: u(`/proyectos/${p.slug}/`), priority: 0.8 })),
+    { url: u('/about/'), priority: 0.7 },
+    ...getProjects().map((p) => ({ url: u(`/projects/${p.slug}/`), priority: 0.8 })),
     ...getPosts().map((p) => ({ url: u(`/blog/${p.slug}/`), lastModified: p.date, priority: 0.6 })),
   ];
 }

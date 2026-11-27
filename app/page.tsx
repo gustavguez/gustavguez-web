@@ -13,10 +13,10 @@ import { NOW } from '@/lib/site';
 import { getPosts, getProjects, toneClass } from '@/lib/content';
 
 const ECO = [
-  { t: 'Recorridos', p: 'Rutas ordenadas, de cómo piensa el código a construir agentes. Sabés qué ver primero y qué después.', go: 'VER LOS RECORRIDOS', href: '/recorridos/', lock: true },
-  { t: 'El canal', p: 'Las clases en video, gratis en YouTube, con el repositorio de cada episodio.', go: 'VER EL CANAL', href: '/canal/', lock: true },
+  { t: 'Recorridos', p: 'Rutas ordenadas, de cómo piensa el código a construir agentes. Sabés qué ver primero y qué después.', go: 'VER LOS RECORRIDOS', href: '/paths/', lock: true },
+  { t: 'El canal', p: 'Las clases en video, gratis en YouTube, con el repositorio de cada episodio.', go: 'VER EL CANAL', href: '/channel/', lock: true },
   { t: 'Newsletter', p: 'Un correo cuando hay algo nuevo, con su repositorio. Sin relleno.', go: 'RECIBIR EL AVISO', href: '#aviso' },
-  { t: 'Charlas', p: 'Charlas técnicas sobre Angular entre 2020 y 2022, y lo que viene.', go: 'VER LAS CHARLAS', href: '/sobre-mi/' },
+  { t: 'Charlas', p: 'Charlas técnicas sobre Angular entre 2020 y 2022, y lo que viene.', go: 'VER LAS CHARLAS', href: '/about/' },
 ];
 export const metadata: Metadata = pageMeta('/');
 

@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import Soon from '@/components/Soon';
 import { pageMeta } from '@/lib/seo';
 
-export const metadata: Metadata = pageMeta('/canal/', { title: 'Próximamente', noindex: true });
+export const metadata: Metadata = pageMeta('/paths/', { title: 'Próximamente', noindex: true });
 
 export default function Page() {
   return <Soon />;

@@ -7,11 +7,11 @@ import { SITE } from '@/lib/site';
 
 const ITEMS = [
   { href: '/', label: 'Inicio' },
-  { href: '/recorridos/', label: 'Recorridos', prelaunch: true },
-  { href: '/canal/', label: 'El canal', prelaunch: true },
-  { href: '/proyectos/', label: 'Proyectos' },
+  { href: '/paths/', label: 'Recorridos', prelaunch: true },
+  { href: '/channel/', label: 'El canal', prelaunch: true },
+  { href: '/projects/', label: 'Proyectos' },
   { href: '/blog/', label: 'Blog' },
-  { href: '/sobre-mi/', label: 'Sobre mí' },
+  { href: '/about/', label: 'Sobre mí' },
 ].filter((i) => !(SITE.LAUNCH && i.prelaunch));
 
 export default function Header() {
@@ -26,7 +26,7 @@ export default function Header() {
         {ITEMS.map((i) => (
           <Link key={i.href} href={i.href} aria-current={isOn(i.href) ? 'page' : undefined}>{i.label}</Link>
         ))}
-        <Link className="btn btn-primary" href="/proyectos/">Ver proyectos</Link>
+        <Link className="btn btn-primary" href="/projects/">Ver proyectos</Link>
       </nav>
     </div></header>
   );

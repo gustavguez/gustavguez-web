@@ -71,7 +71,7 @@ export function getPosts(): Post[] {
 }
 
 export function getProjects(): Project[] {
-  return readDir('proyectos')
+  return readDir('projects')
     .map(({ slug, data, body, file }) => {
       need(data, ['name', 'summary', 'status', 'started'], file);
       return { statusTone: 'prod', stack: [], order: 0, links: [], log: [], ...data, slug, body } as unknown as Project;

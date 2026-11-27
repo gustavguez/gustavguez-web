@@ -45,7 +45,7 @@ export const TALKS = [
     desc: "Charla para MacaoTech sobre Scully, un aliado para las SPA en Angular.",
     slides: "https://drive.google.com/file/d/1i5RaMigdEVIfeHwjuF00DGXV_jFTCFc7/view?usp=sharing",
     video: "K08qSDpOXRY",
-    thumb: "/img/charlas/scully.jpg",
+    thumb: "/img/talks/scully.jpg",
   },
   {
     title: "Standalone components, directives and pipes",
@@ -66,7 +66,7 @@ export const TALKS = [
     desc: "Charla para Angular Montevideo sobre proyección de contenido con ng-content, un mecanismo muy parecido al que usábamos en AngularJS.",
     slides: "https://drive.google.com/file/d/1kEBFV8NXjlONpbYcZXgjuObGGu1VUhYR/view?usp=sharing",
     video: "Hst2V4ZMxlU",
-    thumb: "/img/charlas/angular.jpg",
+    thumb: "/img/talks/angular.jpg",
   },
   {
     title: "Introducción a Dynamic Component Loader",
@@ -77,7 +77,7 @@ export const TALKS = [
     desc: "Charla para Angular Montevideo sobre Dynamic Component Loader (DCL): crear instancias de componentes, cargarles información y renderizarlos en tiempo de ejecución.",
     slides: "https://drive.google.com/file/d/1oUeXKUxtWr9B6WhxEd0_bT_t7N_1JQHG/view?usp=sharing",
     video: "nWLu7-USOxk",
-    thumb: "/img/charlas/angular.jpg",
+    thumb: "/img/talks/angular.jpg",
   },
 ];
 

@@ -15,9 +15,9 @@ export default function Hero() {
           <p className="intro">Soy Gustavo Rodríguez. Hace más de <strong>17 años</strong> que desarrollo software y sigo disfrutando de explorar tecnologías nuevas, entender cómo funcionan y <strong>compartir lo que aprendo</strong>.</p>
           <div className="hero-cta">
             {SITE.LAUNCH
-              ? <><Link className="btn btn-primary" href="/proyectos/">Ver mis proyectos</Link><Link className="btn btn-ghost" href="/sobre-mi/">Sobre mí</Link></>
-              : <Link className="btn btn-primary" href="/recorridos/">Elegí tu recorrido</Link>}
-            <Link className="btn btn-ghost" href="/sobre-mi/">Conocé quién soy</Link>
+              ? <><Link className="btn btn-primary" href="/projects/">Ver mis proyectos</Link><Link className="btn btn-ghost" href="/about/">Sobre mí</Link></>
+              : <Link className="btn btn-primary" href="/paths/">Elegí tu recorrido</Link>}
+            <Link className="btn btn-ghost" href="/about/">Conocé quién soy</Link>
           </div>
         </div>
         <div className="portrait">

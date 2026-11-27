@@ -3,7 +3,7 @@ import { pageMeta } from '@/lib/seo';
 import ProjectCard from '@/components/ProjectCard';
 import { getPosts, getProjects } from '@/lib/content';
 
-export const metadata: Metadata = pageMeta('/proyectos/', { title: 'Proyectos', description: 'Proyectos personales de Gustavo Rodríguez: lo que construyo por mi cuenta para aprender, con la bitácora de cada versión.' });
+export const metadata: Metadata = pageMeta('/projects/', { title: 'Proyectos', description: 'Proyectos personales de Gustavo Rodríguez: lo que construyo por mi cuenta para aprender, con la bitácora de cada versión.' });
 
 export default function Proyectos() {
   const posts = getPosts();

@@ -12,7 +12,7 @@ export default function About({ short = false, page = false }: { short?: boolean
           <p>Siempre me gustó enseñar. Di charlas técnicas durante años y ahora quiero llevar esa costumbre más lejos: <strong>explicar con claridad, sin perder rigor</strong>, para quien empieza y para quien ya programa.</p>
           {!short && <p>No sé todo, y lo digo. Lo que comparto lo probé antes: si algo falló, también lo vas a ver.</p>}
         </div>
-        {short && <div><Link className="btn btn-ghost" href="/sobre-mi/">Más sobre mí</Link></div>}
+        {short && <div><Link className="btn btn-ghost" href="/about/">Más sobre mí</Link></div>}
       </div>
       <div style={{ display: 'grid', gap: 14, alignContent: 'start' }}>
         <span className="mono" style={{ color: 'var(--dim)' }}>Charlas anteriores</span>

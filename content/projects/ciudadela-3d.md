@@ -7,7 +7,7 @@ statusTone: prod            # prod = azul (en curso), ok = verde (terminado), so
 stack: ["Three.js", "OpenStreetMap", "Overture Maps"]
 started: "Nov 2026"
 order: 1                    # el número más bajo aparece primero
-cover: /img/blog/montevideo-3d/v05-calle-san-carlos.jpg   # imagen para compartir el proyecto
+cover: /img/projects/ciudadela-3d/v05-san-carlos-street.jpg   # imagen para compartir el proyecto
 links:
   - { label: Visor, url: "https://claude.ai/artifact/26gTs2uiDTLYcDdiVtcDTx" }
 log:
@@ -31,7 +31,7 @@ Acá cuento cómo fue, etapa por etapa: el primer 3D realista, el salto al dibuj
 Arranqué con un 3D "de videojuego": casas blancas con techos de teja, pasto verde, calles de tierra y la Ciudadela en piedra gris. Se podía volar por arriba o caminar, con un minimapa, un selector «Ir a…» y una capa de **certeza** que pinta cada pieza según qué tan segura es.
 
 <figure class="fig">
-  <img src="/img/blog/montevideo-3d/v04-vista-aerea.jpg" alt="Vista aérea de la v0.4: casas blancas con techos de teja, pasto verde y la Iglesia Matriz, con el minimapa abajo a la derecha" width="1280" height="800">
+  <img src="/img/projects/ciudadela-3d/v04-aerial-view.jpg" alt="Vista aérea de la v0.4: casas blancas con techos de teja, pasto verde y la Iglesia Matriz, con el minimapa abajo a la derecha" width="1280" height="800">
   <figcaption>La v0.4: el 3D realista, con texturas de piedra, cal, teja y pasto.</figcaption>
 </figure>
 
@@ -70,7 +70,7 @@ Cuando dos fuentes no coinciden, el modelo lo dice. Por ejemplo, Cardozo acota 2
 El gran cambio fue dejar el realismo y dibujar la ciudad como un grabado: papel, tinta y rayado. Un 3D realista promete más certeza de la que hay. Un dibujo se lee como lo que es: una interpretación de las fuentes.
 
 <figure class="fig">
-  <img src="/img/blog/montevideo-3d/v05-calle-san-carlos.jpg" alt="Caminando por la Calle San Carlos (hoy Sarandí) en la v0.5: casas con rejas y balcones dibujadas a tinta sobre papel" width="1280" height="800">
+  <img src="/img/projects/ciudadela-3d/v05-san-carlos-street.jpg" alt="Caminando por la Calle San Carlos (hoy Sarandí) en la v0.5: casas con rejas y balcones dibujadas a tinta sobre papel" width="1280" height="800">
   <figcaption>La v0.5: la Calle de San Carlos (hoy Sarandí), dibujada a tinta.</figcaption>
 </figure>
 
@@ -108,7 +108,7 @@ La línea de tiempo va de 1724 a 2026. No invento nada a mano: cada lugar lleva 
 Después convertí el visor en algo para recorrer y jugar, con una condición: separar siempre el juego del dato.
 
 <figure class="fig">
-  <img src="/img/blog/montevideo-3d/v09-retrato-artigas.jpg" alt="Una pieza detrás de una puerta en la Calle San Fernando: el retrato de José Gervasio Artigas en un cuadro con su placa" width="1000" height="700">
+  <img src="/img/projects/ciudadela-3d/v09-artigas-portrait.jpg" alt="Una pieza detrás de una puerta en la Calle San Fernando: el retrato de José Gervasio Artigas en un cuadro con su placa" width="1000" height="700">
   <figcaption>Detrás de una puerta de la Calle San Fernando (hoy Juan Carlos Gómez): Artigas, como un cuadro con su retrato real.</figcaption>
 </figure>
 

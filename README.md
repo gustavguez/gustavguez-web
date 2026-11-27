@@ -136,11 +136,13 @@ Con epígrafe:
 
 ## 5. Agregar o editar un proyecto
 
-Cada proyecto es un archivo en `content/proyectos/`. Abrí `ciudadela-3d.md`: arriba están los datos (estado, stack, links, bitácora) y abajo la historia completa del proyecto en Markdown, con imágenes y tablas, igual que un artículo.
+Cada proyecto es un archivo en `content/projects/`. Abrí `ciudadela-3d.md`: arriba están los datos (estado, stack, links, bitácora) y abajo la historia completa del proyecto en Markdown, con imágenes y tablas, igual que un artículo.
+
+Las imágenes de cada proyecto van en su propia carpeta: `public/img/projects/<nombre-del-proyecto>/` (por ejemplo `public/img/projects/ciudadela-3d/`), y se usan como `/img/projects/ciudadela-3d/archivo.jpg`. Nombres de archivo en inglés, en minúscula y con guiones.
 
 **Proyectos y blog son cosas distintas:** la página del proyecto cuenta qué es y cómo lo fuiste construyendo. El blog es para documentar lo que aprendés en general.
 
-Para uno nuevo, copiá ese archivo con otro nombre (`mi-proyecto.md` → `/proyectos/mi-proyecto/`). El campo `order` define el orden (el más bajo va primero).
+Para uno nuevo, copiá ese archivo con otro nombre (`mi-proyecto.md` → `/projects/mi-proyecto/`). El campo `order` define el orden (el más bajo va primero).
 
 Si un artículo del blog nace de un proyecto, ponele `project: ciudadela-3d` y aparece al pie de esa página, en «Lo que aprendí en el camino».
 
@@ -150,7 +152,7 @@ Si un artículo del blog nace de un proyecto, ponele `project: ciudadela-3d` y a
 
 Casi todo lo que no es un artículo o un proyecto está ahí:
 
-- **`LAUNCH: true`**: la web sale solo con blog y proyectos. Recorridos, el canal y YouTube se ven en gris como "Próximamente" en la home (en el footer directamente no aparecen), y `/recorridos` y `/canal` muestran una página "Próximamente". Cuando tengas el canal, cambialo a `false` (y avisame para armar las páginas de recorridos y canal).
+- **`LAUNCH: true`**: la web sale solo con blog y proyectos. Recorridos, el canal y YouTube se ven en gris como "Próximamente" en la home (en el footer directamente no aparecen), y `/paths` y `/channel` muestran una página "Próximamente". Cuando tengas el canal, cambialo a `false` (y avisame para armar las páginas de recorridos y canal).
 - **`COMPANIES`**: Solcre, Dendra y Bloque, con tu rol y una descripción.
 - **`SOCIAL`**: LinkedIn y X del footer. Un link con la URL vacía no se muestra.
 - **`TALKS`**: charlas anteriores. Cada una se despliega con su descripción, el link para descargar las diapositivas y, si hay, el video de YouTube (con su miniatura).
@@ -175,7 +177,7 @@ El formulario no tiene servidor propio. Mientras `newsletterAction` esté vacío
 Todo lo pendiente está entre **corchetes**. Buscá `[` en estos archivos:
 
 - [ ] `lib/site.ts`: una descripción de cada empresa (el rol «Socio» ya está cargado) (LinkedIn y X ya están cargados).
-- [ ] `content/proyectos/ciudadela-3d.md`: si querés, el link al repositorio.
+- [ ] `content/projects/ciudadela-3d.md`: si querés, el link al repositorio.
 - [ ] `public/img/gus.jpg`: reemplazala por la foto original en alta resolución (vertical, mismo encuadre).
 - [ ] Blog: arranca vacío (la página muestra «Pronto el primer artículo» y la home oculta la sección «Del blog»). Para el primero, creá un `.md` en `content/blog/`.
 
@@ -187,8 +189,8 @@ Todo lo pendiente está entre **corchetes**. Buscá `[` en estos archivos:
 lib/site.ts               ← configuración general (empezá por acá)
 content/
   blog/*.md               ← un archivo por artículo
-  proyectos/*.md          ← un archivo por proyecto
-app/                      ← una carpeta por ruta (/, /blog, /proyectos, /sobre-mi…)
+  projects/*.md           ← un archivo por proyecto
+app/                      ← una carpeta por ruta (/, /blog, /projects, /about…)
   layout.tsx              ← <head>, menú, newsletter y footer comunes
   globals.css             ← todos los estilos
 components/               ← piezas reutilizables (hero, footer, tarjetas…)

@@ -41,7 +41,7 @@ export default async function PostPage({ params }: Props) {
       <div className="post-grid-2">
         <div className="prose" dangerouslySetInnerHTML={{ __html: html }} />
         <aside className="side">
-          {project && <div className="box"><h4>Proyecto</h4><Link className="rel" href={`/proyectos/${project.slug}/`}><span className="rel-thumb">◆</span><span><b>{project.name}</b><span>{project.status}</span></span></Link></div>}
+          {project && <div className="box"><h4>Proyecto</h4><Link className="rel" href={`/projects/${project.slug}/`}><span className="rel-thumb">◆</span><span><b>{project.name}</b><span>{project.status}</span></span></Link></div>}
           <div className="box"><h4>¿Te sirvió?</h4><p style={{ color: 'var(--muted)', fontSize: 15 }}>Un correo cuando publico algo nuevo, sin relleno.</p><a className="btn btn-primary" href="#aviso" style={{ justifyContent: 'center' }}>Avisame</a></div>
         </aside>
       </div>

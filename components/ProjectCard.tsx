@@ -4,7 +4,7 @@ import type { Project } from '@/lib/content';
 
 export default function ProjectCard({ project: p }: { project: Project }) {
   return (
-    <Link className="proj-card" href={`/proyectos/${p.slug}/`}>
+    <Link className="proj-card" href={`/projects/${p.slug}/`}>
       <span className="pc-meta">
         <span className={`badge ${toneClass(p.statusTone)}`}>{p.status}</span>
       </span>

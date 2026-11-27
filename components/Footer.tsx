@@ -26,9 +26,9 @@ export default function Footer() {
       </div>
       <div className="f-cols">
         {/* Mientras SITE.LAUNCH sea true, el footer muestra sólo lo que ya está abierto. */}
-        {!SITE.LAUNCH && <div><h4>Recorridos</h4>{RECORRIDOS.map((r) => <Link key={r.n} href="/recorridos/">{r.title}</Link>)}</div>}
+        {!SITE.LAUNCH && <div><h4>Recorridos</h4>{RECORRIDOS.map((r) => <Link key={r.n} href="/paths/">{r.title}</Link>)}</div>}
         <div><h4>gustavguez</h4>
-          <Link href="/sobre-mi/">Sobre mí</Link>{!SITE.LAUNCH && <Link href="/canal/">El canal</Link>}<Link href="/proyectos/">Proyectos</Link>
+          <Link href="/about/">Sobre mí</Link>{!SITE.LAUNCH && <Link href="/channel/">El canal</Link>}<Link href="/projects/">Proyectos</Link>
           <Link href="/blog/">Blog</Link><a href="#aviso">Newsletter</a><a href="/rss.xml">RSS</a>
         </div>
         <div><h4>En otros lados</h4>
