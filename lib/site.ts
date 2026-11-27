@@ -98,10 +98,10 @@ export const NOW = [
   { tone: 'soon', label: 'Más adelante', title: 'Sumarle MCPs al agente', text: 'Conectarle herramientas por MCP y contar qué cambia, qué se rompe y cuánto cuesta.' },
 ];
 
-// Certificaciones. badge = imagen oficial en public/img/certs/. url = verificación (Credly). Para sumar una, agregá un objeto; cuando la obtengas, sacale locked y poné su badge.
+// Certificaciones. badge = imagen oficial en public/img/certs/. url = verificación de la credencial. Para sumar una, agregá un objeto; cuando la obtengas, sacale locked y poné su badge.
 export const CERTS = [
-  { name: 'AWS Certified AI Practitioner', issuer: 'Amazon Web Services', level: 'Foundational', year: '2026', badge: '/img/certs/aws-ai-practitioner.png', url: 'https://aws.amazon.com/verification' },
-  { name: 'AWS Certified Solutions Architect – Associate', issuer: 'Amazon Web Services', level: 'Associate', year: '2024', badge: '/img/certs/aws-solutions-architect-associate.png', url: 'https://aws.amazon.com/verification' },
+  { name: 'AWS Certified AI Practitioner', issuer: 'Amazon Web Services', level: 'Foundational', year: '2026', badge: '/img/certs/aws-ai-practitioner.png', url: 'https://cp.certmetrics.com/amazon/en/public/verify/credential/c409124a8ffb4d8e8ff5939c14ad12e7' },
+  { name: 'AWS Certified Solutions Architect – Associate', issuer: 'Amazon Web Services', level: 'Associate', year: '2024', badge: '/img/certs/aws-solutions-architect-associate.png', url: 'https://cp.certmetrics.com/amazon/en/public/verify/credential/009d19c0e52a4284ab95d109b35d54e5' },
   // locked: true = badge "por desbloquear" (se ve con candado y "Próximamente", sin link).
   { name: 'Certificación de Anthropic', issuer: 'Anthropic', level: '', year: 'Próximamente', badge: '/img/certs/locked.svg', url: '', locked: true },
 ];
