@@ -13,8 +13,10 @@ export const SITE = {
   // LAUNCH = true: la web sale solo con blog y proyectos.
   // Recorridos y canal se muestran bloqueados ("Próximamente").
   LAUNCH: true,
-  // URL del formulario de newsletter (Buttondown, ConvertKit, etc.).
-  // Vacío = el formulario se muestra deshabilitado con "Muy pronto".
+  // Newsletter con Netlify Forms (los emails quedan en el panel de Netlify → Forms).
+  newsletterNetlify: true,
+  // Alternativa: URL del formulario de otro servicio (Buttondown, Kit...). Solo se usa si newsletterNetlify es false.
+  // Las dos apagadas = el formulario se muestra deshabilitado con "Muy pronto".
   newsletterAction: '',
   // ID del contenedor de Google Tag Manager. Vacío = no se carga.
   gtmId: 'GTM-WFPJXGV7',

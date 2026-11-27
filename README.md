@@ -157,7 +157,7 @@ Casi todo lo que no es un artículo o un proyecto está ahí:
 - **`SOCIAL`**: LinkedIn y X del footer. Un link con la URL vacía no se muestra.
 - **`TALKS`**: charlas anteriores. Cada una se despliega con su descripción, el link para descargar las diapositivas y, si hay, el video de YouTube (con su miniatura).
 - **`NOW`**: la sección "Lo que estoy armando ahora".
-- **`newsletterAction`**: ver abajo.
+- **`newsletterNetlify`** y **`newsletterAction`**: ver abajo.
 - **SEO**: cada página arma sus metadatos con `pageMeta()` de `lib/seo.ts` (título, descripción, canonical, Open Graph y tarjeta de X). La imagen que se ve al compartir es `public/img/og-default.jpg` (1200×630); un proyecto usa su `cover`. `/sitemap.xml` y `/robots.txt` se generan solos. En un proyecto, el campo `description` es el texto para Google (máx. ~160 caracteres).
 - **`gtmId`**: el ID de Google Tag Manager (`GTM-WFPJXGV7`). El código se carga en el `<head>` de todas las páginas desde `app/layout.tsx`. Vacío = sin analítica.
 
@@ -168,7 +168,11 @@ Colores y estilos: `app/globals.css` (los colores de marca están al principio, 
 
 ### Newsletter
 
-El formulario no tiene servidor propio. Mientras `newsletterAction` esté vacío, se muestra deshabilitado con "Muy pronto". Para activarlo, creá una cuenta en un servicio de newsletter (por ejemplo Buttondown, Kit/ConvertKit o MailerLite), copiá la URL del formulario que te dan ("form action") y pegala en `newsletterAction`. El campo del email se llama `email`; si el servicio pide otro nombre, cambialo en `components/Newsletter.tsx`.
+El formulario usa **Netlify Forms** (`newsletterNetlify: true` en `lib/site.ts`). Netlify detecta el formulario `newsletter` en `public/__forms.html` al hacer el deploy, y cada email que se anota aparece en el panel de Netlify, en *Forms*. Tiene un campo trampa (`bot-field`) contra el spam.
+
+Para que funcione, en Netlify: *Site configuration → Forms → Enable form detection*, y después hacé un deploy nuevo. Para que te llegue un mail con cada suscripción: *Site configuration → Notifications → Emails and webhooks → Form submission notifications*. El plan gratis acepta 100 envíos por mes.
+
+Si en algún momento pasás a un servicio de newsletter (Buttondown, Kit, MailerLite), poné `newsletterNetlify: false` y pegá la URL del formulario en `newsletterAction`. Con las dos apagadas, el formulario se muestra deshabilitado con "Muy pronto".
 
 ---
 

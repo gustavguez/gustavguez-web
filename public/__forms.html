@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<!-- Netlify lee este archivo al hacer el deploy para registrar el formulario "newsletter".
+     No se muestra en la web: el formulario real está en components/Newsletter.tsx y manda los datos acá. -->
+<html lang="es">
+  <body>
+    <form name="newsletter" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="newsletter" />
+      <input name="bot-field" />
+      <input name="email" type="email" />
+    </form>
+  </body>
+</html>
