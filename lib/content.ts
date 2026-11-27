@@ -38,6 +38,7 @@ export type Project = {
   order: number;
   cover?: string;
   links: { label: string; url: string }[];
+  cta?: { label: string; url: string }; // botón flotante "Abrir" en la página del proyecto
   log: { when: string; text: string; done?: boolean }[];
   body: string;
 };

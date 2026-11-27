@@ -10,6 +10,7 @@ order: 1                    # el número más bajo aparece primero
 cover: /img/projects/ciudadela-3d/v05-san-carlos-street.jpg   # imagen para compartir el proyecto
 links:
   - { label: Visor, url: "https://claude.ai/artifact/26gTs2uiDTLYcDdiVtcDTx" }
+cta: { label: "Abrir el visor 3D", url: "https://claude.ai/artifact/26gTs2uiDTLYcDdiVtcDTx" }   # botón flotante; si no está, usa el primer enlace
 log:
   - { when: "v0.1 a v0.4", text: "El primer 3D realista, con texturas propias y la capa de certeza.", done: true }
   - { when: "v0.5", text: "El salto al dibujo a tinta, el plano de 1810 en el suelo y el calce con la ciudad de hoy.", done: true }

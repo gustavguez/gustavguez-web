@@ -142,6 +142,8 @@ Las imágenes de cada proyecto van en su propia carpeta: `public/img/projects/<n
 
 **Proyectos y blog son cosas distintas:** la página del proyecto cuenta qué es y cómo lo fuiste construyendo. El blog es para documentar lo que aprendés en general.
 
+En la página del proyecto hay un botón flotante, siempre visible, que abre el proyecto en otra pestaña. Sale del campo `cta` (texto y link). Si no lo ponés, usa el primer enlace de `links`, y si no hay enlaces, no aparece.
+
 Para uno nuevo, copiá ese archivo con otro nombre (`mi-proyecto.md` → `/projects/mi-proyecto/`). El campo `order` define el orden (el más bajo va primero).
 
 Si un artículo del blog nace de un proyecto, ponele `project: ciudadela-3d` y aparece al pie de esa página, en «Lo que aprendí en el camino».

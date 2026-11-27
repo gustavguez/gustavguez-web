@@ -24,6 +24,9 @@ export default async function ProjectPage({ params }: Props) {
   if (!p) notFound();
   const posts = getPosts().filter((x) => x.project === p.slug);
   const html = await renderMarkdown(p.body);
+  // Botón siempre visible: usa `cta` del .md o, si no hay, el primer enlace externo.
+  const first = p.links.find((l) => l.url.startsWith('http'));
+  const cta = p.cta ?? (first && { label: `Abrir ${first.label.toLowerCase()}`, url: first.url });
 
   return (
     <>
@@ -65,6 +68,11 @@ export default async function ProjectPage({ params }: Props) {
           <div className="box"><h4>Seguir el proyecto</h4><p style={{ color: 'var(--muted)', fontSize: 15 }}>Un correo cuando hay avances, sin relleno.</p><a className="btn btn-primary" href="#aviso" style={{ justifyContent: 'center' }}>Avisame</a></div>
         </aside>
       </div>
+      {cta && (
+        <a className="btn btn-primary project-cta" href={cta.url} target="_blank" rel="noopener">
+          {cta.label} <span aria-hidden="true">↗</span>
+        </a>
+      )}
     </>
   );
 }
