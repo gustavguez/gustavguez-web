@@ -69,8 +69,12 @@ export default async function ProjectPage({ params }: Props) {
         </aside>
       </div>
       {cta && (
-        <a className="btn btn-primary project-cta" href={cta.url} target="_blank" rel="noopener noreferrer">
-          {cta.label} <span aria-hidden="true">↗</span>
+        <a className="project-cta" href={cta.url} target="_blank" rel="noopener noreferrer">
+          <span className="project-cta-text">
+            <b>{cta.label}</b>
+            <small>{cta.url.replace(/^https?:\/\//, '').replace(/\/$/, '')}</small>
+          </span>
+          <span className="project-cta-icon" aria-hidden="true">↗</span>
         </a>
       )}
     </>
