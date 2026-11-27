@@ -460,3 +460,23 @@ img{max-width:100%}
 @media (prefers-reduced-motion:reduce){.project-cta::before{animation:none;opacity:0}}
 @media (max-width:640px){.project-cta{left:16px;right:16px;bottom:16px;justify-content:space-between}body:has(.project-cta){padding-bottom:96px}}
 @media print{.project-cta{display:none}}
+
+/* certificaciones */
+.certs-band{position:relative;overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:radial-gradient(900px 380px at 85% 50%,var(--accent-soft),transparent 70%),var(--surface)}
+.certs-band-in{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:clamp(32px,5vw,72px);align-items:center}
+.certs-band-txt{display:grid;gap:14px;max-width:520px}
+.certs-badges{display:flex;flex-wrap:wrap;gap:clamp(18px,3vw,36px)}
+.cert-badge{display:grid;justify-items:center;gap:10px;text-decoration:none;transition:transform .2s}
+.cert-badge img{width:clamp(104px,11vw,132px);height:auto;filter:drop-shadow(0 12px 28px rgba(0,0,0,.45))}
+.cert-badge span{font-family:var(--f-mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--dim)}
+.cert-badge:hover{transform:translateY(-4px)}
+.cert-badge.is-locked{cursor:default}
+.cert-badge.is-locked:hover{transform:none}
+.cert-badge.is-locked img{filter:none;opacity:.9}
+.cert-badge.is-locked span{display:grid;justify-items:center;gap:2px}
+.cert-badge.is-locked b{font-family:var(--f-body);font-size:13px;letter-spacing:0;text-transform:none;color:var(--muted);font-weight:600}
+.certs-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px}
+.cert-card{display:grid;grid-template-columns:88px 1fr;gap:20px;align-items:center;border:1px solid var(--line);border-radius:8px;padding:22px;background:var(--surface);text-decoration:none;color:inherit;transition:border-color .2s}
+.cert-card:hover{border-color:var(--accent)}
+.cert-card h3{font-size:18px;margin:4px 0 8px}
+@media (max-width:860px){.certs-band-in{grid-template-columns:1fr}.certs-badges{justify-content:flex-start}}

@@ -97,3 +97,11 @@ export const NOW = [
   { tone: 'soon', label: 'Después', title: 'Un agente desde cero con Python', text: 'Sin frameworks: el bucle, las tools y la memoria escritos a mano para entender cada pieza.' },
   { tone: 'soon', label: 'Más adelante', title: 'Sumarle MCPs al agente', text: 'Conectarle herramientas por MCP y contar qué cambia, qué se rompe y cuánto cuesta.' },
 ];
+
+// Certificaciones. badge = imagen oficial en public/img/certs/. url = verificación (Credly). Para sumar una, agregá un objeto; cuando la obtengas, sacale locked y poné su badge.
+export const CERTS = [
+  { name: 'AWS Certified AI Practitioner', issuer: 'Amazon Web Services', level: 'Foundational', year: '2026', badge: '/img/certs/aws-ai-practitioner.png', url: 'https://aws.amazon.com/verification' },
+  { name: 'AWS Certified Solutions Architect – Associate', issuer: 'Amazon Web Services', level: 'Associate', year: '2024', badge: '/img/certs/aws-solutions-architect-associate.png', url: 'https://aws.amazon.com/verification' },
+  // locked: true = badge "por desbloquear" (se ve con candado y "Próximamente", sin link).
+  { name: 'Certificación de Anthropic', issuer: 'Anthropic', level: '', year: 'Próximamente', badge: '/img/certs/locked.svg', url: '', locked: true },
+];

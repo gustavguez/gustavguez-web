@@ -20,7 +20,7 @@ export default function TagFilter({ posts }: { posts: Lite[] }) {
       <div className="post-list">
         {posts.length
           ? posts.filter((p) => !tag || p.tag === tag).map((p) => <PostRow key={p.slug} post={p} />)
-          : <div className="box"><p style={{ color: 'var(--muted)' }}>Pronto el primer artículo.</p></div>}
+          : <div className="box"><p style={{ color: 'var(--muted)' }}>Estoy escribiendo el primer artículo y en breve lo subo. Si querés enterarte cuando salga, <a href="#aviso">anotate acá</a>.</p></div>}
       </div>
     </>
   );

@@ -8,6 +8,7 @@ import PostCard from '@/components/PostCard';
 import ProjectCard from '@/components/ProjectCard';
 import About from '@/components/About';
 import Experience from '@/components/Experience';
+import Certifications from '@/components/Certifications';
 import Lock from '@/components/Lock';
 import { NOW } from '@/lib/site';
 import { getPosts, getProjects, toneClass } from '@/lib/content';
@@ -83,6 +84,7 @@ export default function Home() {
       )}
 
       <About short />
+      <Certifications variant="band" />
       <Experience />
     </>
   );
