@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import { SITE, SOCIAL, COMPANIES } from '@/lib/site';
 
 // Imagen para compartir (1200×630, la que muestran LinkedIn, WhatsApp y X).
-const DEFAULT_IMAGE = { url: '/img/og-default.jpg', width: 1200, height: 630, alt: 'Gustavo Rodríguez, desarrollador de software en Montevideo' };
-export const HOME_TITLE = 'Gustavo Rodríguez · Desarrollador de software en Montevideo';
+const DEFAULT_IMAGE = { url: '/img/og-default.jpg', width: 1200, height: 630, alt: 'Gustavo Rodríguez, desarrollador de software en Uruguay' };
+export const HOME_TITLE = 'Gustavo Rodríguez · Desarrollador de software en Uruguay';
 
 type Opts = {
   title?: string;            // sin el sufijo "· gustavguez" (se agrega solo)

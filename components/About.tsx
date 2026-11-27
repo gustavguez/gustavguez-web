@@ -8,7 +8,8 @@ export default function About({ short = false, page = false }: { short?: boolean
         <span className="eyebrow">Sobre mí</span>
         {page ? <h1 className="h2">Hola, soy Gus.</h1> : <h2>Hola, soy Gus.</h2>}
         <div className="txt">
-          <p>Soy desarrollador de software en Montevideo, con <strong>más de 17 años</strong> construyendo productos. Trabajo con Angular desde 2015 y, más recientemente, con React. También armo APIs con PHP y Node.</p>
+          <p>Soy desarrollador de software en Uruguay y hace <strong>más de 17 años</strong> que construyo productos. Soy socio en Solcre, Dendra y Bloque, donde hacemos software, inteligencia artificial, marcas y sitios web.</p>
+          <p>Arranqué con PHP y Node, y trabajo con Angular desde sus inicios. Hoy estoy metido de lleno en la <strong>inteligencia artificial</strong>.</p>
           <p>Siempre me gustó enseñar. Di charlas técnicas durante años y ahora quiero llevar esa costumbre más lejos: <strong>explicar con claridad, sin perder rigor</strong>, para quien empieza y para quien ya programa.</p>
           {!short && <p>No sé todo, y lo digo. Lo que comparto lo probé antes: si algo falló, también lo vas a ver.</p>}
         </div>

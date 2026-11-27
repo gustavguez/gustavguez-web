@@ -8,7 +8,7 @@ export const SITE = {
   role: 'Desarrollador de software',
   city: 'Montevideo',
   description:
-    'Gustavo Rodríguez, desarrollador de software en Montevideo. Aprendo, construyo y comparto lo que descubro.',
+    'Gustavo Rodríguez, desarrollador de software en Uruguay. Aprendo, construyo y comparto lo que descubro.',
   years: '17+',
   // LAUNCH = true: la web sale solo con blog y proyectos.
   // Recorridos y canal se muestran bloqueados ("Próximamente").
