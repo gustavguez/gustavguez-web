@@ -18,7 +18,7 @@ export default function Footer() {
             {COMPANIES.map((c) => (
               <div className="co" key={c.name}>
                 <span className="wm">{c.name}</span><span className="co-role">{c.role}</span>
-                <a className="co-link" href={c.url} target="_blank" rel="noopener">{host(c.url)}</a>
+                <a className="co-link" href={c.url} target="_blank" rel="noopener noreferrer">{host(c.url)}</a>
               </div>
             ))}
           </div>
@@ -32,7 +32,7 @@ export default function Footer() {
           <Link href="/blog/">Blog</Link><a href="#aviso">Newsletter</a><a href="/rss.xml">RSS</a>
         </div>
         <div><h4>En otros lados</h4>
-          {SOCIAL.filter((s) => s.url).map((s) => <a key={s.label} href={s.url} target="_blank" rel="noopener">{s.label}</a>)}
+          {SOCIAL.filter((s) => s.url).map((s) => <a key={s.label} href={s.url} target="_blank" rel="noopener noreferrer">{s.label}</a>)}
         </div>
       </div>
       <div className="f-bottom"><span>© {new Date().getFullYear()} {SITE.author} · {SITE.city}, Uruguay</span><span>Aprender. Entender. Construir.</span></div>

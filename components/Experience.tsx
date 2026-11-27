@@ -8,7 +8,7 @@ export default function Experience() {
         <p className="lede">Las empresas respaldan la experiencia. Los proyectos personales muestran la curiosidad.</p></div>
       <div className="xp">{COMPANIES.map((c) => (
         <div key={c.name}><span className="mono" style={{ color: 'var(--dim)' }}>{c.role}</span><h3>{c.name}</h3><p>{c.desc}</p>
-          <a className="co-link" href={c.url} target="_blank" rel="noopener">{host(c.url)}</a></div>
+          <a className="co-link" href={c.url} target="_blank" rel="noopener noreferrer">{host(c.url)}</a></div>
       ))}</div>
     </div></section>
   );

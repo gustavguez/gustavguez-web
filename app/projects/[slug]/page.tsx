@@ -61,7 +61,7 @@ export default async function ProjectPage({ params }: Props) {
         <aside className="side">
           {p.links.length > 0 && <div className="box"><h4>Enlaces</h4><ul>{p.links.map((l) => (
             <li key={l.label}>{l.url.startsWith('http')
-              ? <a href={l.url} target="_blank" rel="noopener"><b>{l.label}</b> ↗</a>
+              ? <a href={l.url} target="_blank" rel="noopener noreferrer"><b>{l.label}</b> ↗</a>
               : <><b style={{ color: 'var(--fg)' }}>{l.label}</b>&nbsp;<span style={{ color: 'var(--dim)' }}>{l.url}</span></>}</li>
           ))}</ul></div>}
           <div className="box"><h4>Stack</h4><span className="chips">{p.stack.map((t) => <span key={t}>{t}</span>)}</span></div>
@@ -69,7 +69,7 @@ export default async function ProjectPage({ params }: Props) {
         </aside>
       </div>
       {cta && (
-        <a className="btn btn-primary project-cta" href={cta.url} target="_blank" rel="noopener">
+        <a className="btn btn-primary project-cta" href={cta.url} target="_blank" rel="noopener noreferrer">
           {cta.label} <span aria-hidden="true">↗</span>
         </a>
       )}

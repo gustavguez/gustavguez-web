@@ -21,18 +21,18 @@ export default function About({ short = false, page = false }: { short?: boolean
             <details className="talk" key={t.title}>
               <summary><span className="t-title">{t.title}</span><span className="t-when">{t.when}</span></summary>
               <div className="talk-body">
-                {t.video && <a className="talk-yt" href={`https://www.youtube.com/watch?v=${t.video}`} target="_blank" rel="noopener">Ver en YouTube ↗</a>}
+                {t.video && <a className="talk-yt" href={`https://www.youtube.com/watch?v=${t.video}`} target="_blank" rel="noopener noreferrer">Ver en YouTube ↗</a>}
                 {t.video && (
-                  <a className="talk-thumb" href={`https://www.youtube.com/watch?v=${t.video}`} target="_blank" rel="noopener" aria-label={`Ver el video de ${t.title}`}>
+                  <a className="talk-thumb" href={`https://www.youtube.com/watch?v=${t.video}`} target="_blank" rel="noopener noreferrer" aria-label={`Ver el video de ${t.title}`}>
                     <img src={'thumb' in t && t.thumb ? t.thumb : `https://i.ytimg.com/vi/${t.video}/hqdefault.jpg`} alt="" loading="lazy" />
                     <span className="play" aria-hidden="true">▶</span>
                   </a>
                 )}
-                <span className="t-meta">{t.date} · <a href={t.orgUrl} target="_blank" rel="noopener">{t.org}</a></span>
+                <span className="t-meta">{t.date} · <a href={t.orgUrl} target="_blank" rel="noopener noreferrer">{t.org}</a></span>
                 <p>{t.desc}</p>
                 <div className="talk-links">
-                  <a href={t.slides} target="_blank" rel="noopener">↓ Descargar diapositivas</a>
-                  {t.video && <a href={`https://www.youtube.com/watch?v=${t.video}`} target="_blank" rel="noopener">▶ Ver en YouTube</a>}
+                  <a href={t.slides} target="_blank" rel="noopener noreferrer">↓ Descargar diapositivas</a>
+                  {t.video && <a href={`https://www.youtube.com/watch?v=${t.video}`} target="_blank" rel="noopener noreferrer">▶ Ver en YouTube</a>}
                 </div>
               </div>
             </details>

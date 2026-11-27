@@ -11,6 +11,20 @@ import rehypeShiki from '@shikijs/rehype';
 import rehypeStringify from 'rehype-stringify';
 
 const ROOT = path.join(process.cwd(), 'content');
+
+// Los links externos (http/https) de los .md se abren en otra pestaña.
+type HNode = { type: string; tagName?: string; properties?: Record<string, unknown>; children?: HNode[] };
+function rehypeExternalLinks() {
+  return (tree: HNode) => {
+    const walk = (n: HNode) => {
+      if (n.type === 'element' && n.tagName === 'a' && /^https?:\/\//.test(String(n.properties?.href ?? ''))) {
+        n.properties = { ...n.properties, target: '_blank', rel: ['noopener', 'noreferrer'] };
+      }
+      n.children?.forEach(walk);
+    };
+    walk(tree);
+  };
+}
 const IS_DEV = process.env.NODE_ENV === 'development';
 
 export type Post = {
@@ -86,6 +100,7 @@ export async function renderMarkdown(md: string): Promise<string> {
     .use(remarkGfm)
     .use(remarkRehype, { allowDangerousHtml: true })
     .use(rehypeRaw)
+    .use(rehypeExternalLinks)
     .use(rehypeShiki, {
       theme: 'github-dark',
       langs: ['python', 'javascript', 'typescript', 'tsx', 'bash', 'console', 'json', 'html', 'css', 'php', 'sql', 'yaml'],
