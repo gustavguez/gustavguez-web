@@ -84,8 +84,8 @@ export default function Home() {
       )}
 
       <About short />
-      <Certifications variant="band" />
       <Experience />
+      <Certifications variant="band" />
     </>
   );
 }
