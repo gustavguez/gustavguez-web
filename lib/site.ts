@@ -22,10 +22,11 @@ export const SITE = {
   gtmId: 'GTM-WFPJXGV7',
 };
 
+// logo: archivo en public/img/companies/. logoH/logoW: tamaño en px para que los tres se vean parejos. logoMono: true = logo de un solo color, se pinta con el color del texto (sirve en tema claro y oscuro).
 export const COMPANIES = [
-  { name: 'Solcre', url: 'https://www.solcre.com/', role: 'Socio', desc: 'Desarrollamos software e inteligencia artificial que llega a producción. Desde 2007, más de 500 proyectos en 18 países: producto digital, IA, equipos dedicados y consultoría.' },
-  { name: 'Dendra', url: 'https://www.dendra.agency/', role: 'Socio', desc: 'Agencia creativa. Hacemos estrategia, ideas, contenido, redes y marketing de performance para marcas que quieren hacerse oír.' },
-  { name: 'Bloque', url: 'https://www.bloque.com.uy/', role: 'Socio', desc: 'Estudio boutique de diseño y desarrollo web. Hacemos sitios, apps, SEO y e-commerce para empresas que no pueden verse improvisadas en internet.' },
+  { name: 'Solcre', url: 'https://www.solcre.com/', role: 'Socio', logo: '/img/companies/solcre.svg', logoMono: false, logoH: 34, logoW: 123, desc: 'Desarrollamos software e inteligencia artificial que llega a producción. Desde 2007, más de 500 proyectos en 18 países: producto digital, IA, equipos dedicados y consultoría.' },
+  { name: 'Dendra', url: 'https://www.dendra.agency/', role: 'Socio', logo: '/img/companies/dendra.svg', logoMono: true, logoH: 26, logoW: 114, desc: 'Agencia creativa. Hacemos estrategia, ideas, contenido, redes y marketing de performance para marcas que quieren hacerse oír.' },
+  { name: 'Bloque', url: 'https://www.bloque.com.uy/', role: 'Socio', logo: '/img/companies/bloque.svg', logoMono: true, logoH: 36, logoW: 36, desc: 'Estudio boutique de diseño y desarrollo web. Hacemos sitios, apps, SEO y e-commerce para empresas que no pueden verse improvisadas en internet.' },
 ];
 
 // Redes del footer. Mientras la URL esté vacía se muestran en gris como «pronto».

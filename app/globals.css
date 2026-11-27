@@ -261,8 +261,11 @@ aside.side{display:grid;gap:18px;align-content:start;position:sticky;top:96px}
 @media (max-width:760px){.fit{grid-template-columns:1fr}}
 .testi{border:1px dashed var(--rail);border-radius:8px;padding:18px 22px;color:var(--dim);font-family:var(--f-mono);font-size:13px;margin-top:40px}
 .xp{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
-.xp div{border:1px solid var(--line);border-radius:8px;padding:22px;background:var(--surface);display:grid;gap:8px}
+.xp div{border:1px solid var(--line);border-radius:8px;padding:22px;background:var(--surface);display:grid;gap:8px;align-content:start}
 .xp p{color:var(--muted);font-size:15px}
+.xp-logo{display:flex;align-items:center;height:40px;margin-bottom:10px}
+.xp-logo img{display:block;max-width:100%}
+.xp-logo-mono{display:block;max-width:100%;background:var(--fg);-webkit-mask:no-repeat left center/contain;mask:no-repeat left center/contain}
 @media (max-width:860px){.xp{grid-template-columns:1fr}}
 .ch-stage{display:grid;grid-template-columns:260px 1fr;gap:28px;padding-block:32px;border-bottom:1px solid var(--line)}
 .ch-eps{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;min-width:0}
